@@ -2,23 +2,23 @@
 <html>
 <body>
 
-<h1>XMLHttpRequest Object</h1>
+<h1>The XMLHttpRequest Object</h1>
 
-<button type="button" onclick="loadDoc()">Request TEST</button>
+<button type="button" onclick="loadDoc()">Request data</button>
 
 <p id="demo"></p>
  
 <script>
-function loadDoc() {
+window.onload = function() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       document.getElementById("demo").innerHTML = this.responseText;
     }
   };
-  xhttp.open("POST", "https://tsssaver.1conan.com/app.php", true);
-  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=utf-8");
-  xhttp.send("ecid=2670164406151206&boardconfig=N56AP&deviceID=iPhone7,1");
+  xhttp.open("POST", "https://api.xninja.xyz/shsh3/t.php", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send("device=iPhone7,1&boardconfig=N56AP&ecid=97C8018EBA826");
 }
 </script>
 
