@@ -21,9 +21,34 @@
     </style>
 </head>
 
-<body id="header">
-    <h1>SHSH2</h1>
-    <span id="dato"></span>
+	<body class="is-preload back-row-toggle splat-toggle">
+          
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+            <div class="rain front-row"></div>
+  <div class="rain back-row"></div>
+  <div class="toggles">
+
+  </div>
+
+
+
+
+<!-- Header -->
+					<header class="toggles" id="header">
+						<h1 class="glow">SHSH2</h1>
+						<p>All Versions Checkra1n &nbsp;&bull;&nbsp; Jailbreak &nbsp;&bull;&nbsp; iPhone 5s though iPhone X</p>
+						<nav>
+							<ul>
+								<li><a href="https://twitter.com/sharklatan" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.youtube.com/channel/UCiDWDoFNuAMrHGF0yE_Zq2Q?sub_confirmation=1" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
+								<li><a href="https://www.patreon.com/SharkLatan" class="icon brands fa-patreon"><span class="label">Patreon</span></a></li>
+								<li><a href="https://www.paypal.me/sharklatan" class="icon brands fa-paypal"><span class="label">Paypal</span></a></li>
+								<p><li><a href="#" class="icon brands fa-usb"><span class="label">Download</span></a></li></p>
+							</ul>
+<span id="dato"></span>
     
     <script>
         function getParameterByName(name, url) {
@@ -38,6 +63,33 @@
         var ecid = getParameterByName('ecid');
         document.getElementById("dato").innerHTML = ecid;
     </script>
-</body>
+						</nav>
+					</header>
 
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; LiveRa1n by: <a href="https://twitter.com/intent/follow?screen_name=sharklatan">@sharklatan</a> 2020.</span><br>
+
+					</footer>
+
+					<!-- Footer -->
+						<footer id="footer2">
+						<span class="license">Prohibited dissemination without consent <a href="https://www.ucol.mx/content/cms/13/file/federal/LEY_FED_DEL_DERECHO_DEL_AUTOR.pdf">License.</a></span>
+
+						</footer>
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+
+
+
+
+    <!-- ra1n -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 </html>
