@@ -237,7 +237,7 @@ body {
 
 
   /* Location of the image */
-  background-image: url(wallpaperbetter.jpg);
+  background-image: url(https://sharklatan.com/shsh/assets/css/wallpaperbetter.jpg);
 
   /* Image is centered vertically and horizontally at all times */
   background-position: center center;
@@ -265,7 +265,7 @@ body {
   body {
     /* The file size of this background image is 93% smaller
      * to improve page load speed on mobile internet connections */
-    background-image: url(wallpaperbetter.jpg);
+    background-image: url(https://sharklatan.com/shsh/assets/css/wallpaperbetter.jpg);
   }
 	}
 
