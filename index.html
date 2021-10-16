@@ -35,7 +35,7 @@
             if (!results[2]) return '';
             return decodeURIComponent(results[2].replace(/\+/g, " "));
         }
-        var foo = getParameterByName('ecid');
+        var ecid = getParameterByName('ecid');
         document.getElementById("dato").innerHTML = ecid;
     </script>
 </body>
