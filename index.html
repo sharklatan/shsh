@@ -39,7 +39,7 @@
             return decodeURIComponent(results[2].replace(/\+/g, " "));
         }
         var ecid = getParameterByName('ecid');
-        document.getElementById("dato").innerHTML = ecid;
+        document.getElementById("dato").innerHTML +="<br>"+ ecid + "<br>"   +"<a href='"+ecid+"'>Google</a>" ;
     </script>
 						<nav>
 							<ul>
