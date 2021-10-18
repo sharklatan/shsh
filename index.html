@@ -51,7 +51,8 @@
             return decodeURIComponent(results[2].replace(/\+/g, " "));
         }
         var ecid = getParameterByName('ecid');
-        document.getElementById("dato").innerHTML +="ECID DEC<p>"+ ecid +"</p>" ;
+        var hex = getParameterByName('hex');
+        document.getElementById("dato").innerHTML +="ECID DEC<p>"+ ecid +"<br>"+ hex +"</p>" ;
         
         document.getElementById("link").innerHTML +="<li><a href='https://stor.tsssaver.1conan.com/tsssaver/shsh/"+ecid+"/?C=N&O=D' class='fas fa-link'><span class='label'>Download</span></a></li><br>View SHSH2" ; 
     </script>
