@@ -1,0 +1,6 @@
+User-agent: Googlebot
+
+User-agent: *
+Allow: /
+
+Sitemap: http://shsh.sharklatan.com/sitemap.xml
