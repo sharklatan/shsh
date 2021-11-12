@@ -54,7 +54,8 @@
         var hex = getParameterByName('hex');
         document.getElementById("dato").innerHTML +="ECID<p>Hex: "+ hex +"<br>Dec: "+ ecid +"</p>" ;
         
-        document.getElementById("link").innerHTML +="<li><a href='https://stor.tsssaver.1conan.com/tsssaver/shsh/"+ecid+"/?C=N&O=D' class='fas fa-link'><span class='label'>Download</span></a></li><br>View SHSH2" ; 
+        document.getElementById("link").innerHTML +="<li><a href='https://stor.tsssaver.1conan.com/tsssaver/shsh/"+ecid+"/?C=N&O=D' class='fas fa-link'><span class='label'>TssSaver</span></a></li><br>TssSaver" ; 
+        document.getElementById("link2").innerHTML +="<li><a href='https://shsh.host/"+hex+"/' class='fas fa-link'><span class='label'>shsh.Host</span></a></li><br>SHSH.HOST" ;
     </script>
 						<nav>
 							<ul>
@@ -63,6 +64,7 @@
 								<li><a href="https://www.patreon.com/SharkLatan" class="icon brands fa-patreon"><span class="label">Patreon</span></a></li>
 								<li><a href="https://www.paypal.me/sharklatan" class="icon brands fa-paypal"><span class="label">Paypal</span></a></li>
 								<p id="link"> </p>
+								<p id="link2"> </p>
 							</ul>
 						</nav>
 					</header>
