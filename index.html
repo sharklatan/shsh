@@ -36,8 +36,8 @@
 				<!-- Header -->
 					<header class="toggles" id="header">
 						<h1>SHSH2</h1>
+						<p id="current"> </p>
 						<p id="dato"> </p>
-
 
     
     <script>
@@ -52,7 +52,14 @@
         }
         var ecid = getParameterByName('ecid');
         var hex = getParameterByName('hex');
-        document.getElementById("dato").innerHTML +="ECID<p>Hex: "+ hex +"<br>Dec: "+ ecid +"</p>" ;
+        var device = getParameterByName('device');
+        var board = getParameterByName('board');
+        var ios = getParameterByName('ios');
+        var name = getParameterByName('name');
+        var nick = getParameterByName('nick');
+
+        document.getElementById("current").innerHTML +="<b>"+ name +" "+ ios +" ("+ nick +")</b><br>"+ device +"<br>"+ board +"<br>" ;
+        document.getElementById("dato").innerHTML +="Hex: "+ hex +"<br>Dec: "+ ecid +"</p>" ;
         
         document.getElementById("link").innerHTML +="<li><a href='https://stor.tsssaver.1conan.com/tsssaver/shsh/"+ecid+"/?C=N&O=D' class='fas fa-link'><span class='label'>TssSaver</span></a></li><br>TssSaver" ; 
         document.getElementById("link2").innerHTML +="<li><a href='https://shsh.host/"+hex+"/' class='fas fa-link'><span class='label'>shsh.Host</span></a></li><br>SHSH.HOST" ;
@@ -63,6 +70,7 @@
 								<li><a href="https://www.youtube.com/channel/UCiDWDoFNuAMrHGF0yE_Zq2Q?sub_confirmation=1" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
 								<li><a href="https://www.patreon.com/SharkLatan" class="icon brands fa-patreon"><span class="label">Patreon</span></a></li>
 								<li><a href="https://www.paypal.me/sharklatan" class="icon brands fa-paypal"><span class="label">Paypal</span></a></li>
+								
 								<p id="link"> </p>
 								<p id="link2"> </p>
 							</ul>
