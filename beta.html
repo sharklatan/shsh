@@ -56,8 +56,9 @@
         var board = getParameterByName('board');
         var ios = getParameterByName('ios');
         var name = getParameterByName('name');
- 
-        document.getElementById("dato").innerHTML +="DEVICE<p>Device: "+ device +"<br>Board: "+ board +"<br>Current iOS: "+ ios +"</p>" ;
+        var nick = getParameterByName('nick');
+
+        document.getElementById("current").innerHTML +="<b>"+ name +" "+ ios +" ("+ nick +")</b><br>"+ device +"<br>"+ board +"<br>" ;
         document.getElementById("dato").innerHTML +="Hex: "+ hex +"<br>Dec: "+ ecid +"</p>" ;
         
         document.getElementById("link").innerHTML +="<li><a href='https://stor.tsssaver.1conan.com/tsssaver/shsh/"+ecid+"/?C=N&O=D' class='fas fa-link'><span class='label'>TssSaver</span></a></li><br>TssSaver" ; 
